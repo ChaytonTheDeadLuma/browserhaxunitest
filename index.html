@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack me!!</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f0e6ff;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            color: #6c35b5;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 12px;
+            background: #8b5cf6;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #6d28d9;
+        }
+
+        #emojis {
+            font-size: 45px;
+            margin-top: 30px;
+            overflow-wrap: anywhere;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>BROWSERHAXUNITEST</h1>
+    <p>Press the button to get to the homebrew launcher!</p>
+
+    <button onclick="showEmojis()">PROCEED TO NEW AUTOHAXX!</button>
+
+    <div id="emojis"></div>
+
+    <script>
+        function showEmojis() {
+            const emojiList = [
+                "😀", "😂", "🥹", "😎", "🤯",
+                "👻", "💀", "🔥", "🍕", "🐱",
+                "🎮", "🚀", "✨", "🦆", "🍉"
+            ];
+
+            document.getElementById("emojis").textContent =
+                emojiList.join(" ");
+        }
+    </script>
+
+</body>
+</html>
